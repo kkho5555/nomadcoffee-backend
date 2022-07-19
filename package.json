@@ -1,0 +1,23 @@
+{
+	"name": "nomadcoffee-backend",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:kkho5555/nomadcoffee-backend.git",
+	"author": "kkho5555 <kkho5555@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"dev": "nodemon --exec ts-node -r tsconfig-paths/register src/server",
+		"migrate": "npx prisma migrate dev"
+	},
+	"dependencies": {
+		"@graphql-tools/load-files": "^6.6.0",
+		"@prisma/client": "^4.1.0",
+		"apollo-server": "^3.10.0",
+		"graphql": "^16.5.0",
+		"nodemon": "^2.0.19",
+		"prisma": "^4.1.0",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.0.0",
+		"typescript": "^4.7.4"
+	}
+}
