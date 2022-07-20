@@ -7,12 +7,15 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "nodemon --exec ts-node -r tsconfig-paths/register src/server",
-		"migrate": "npx prisma migrate dev"
+		"migrate": "npx prisma migrate dev",
+		"studio": "npx prisma studio"
 	},
 	"dependencies": {
 		"@graphql-tools/load-files": "^6.6.0",
 		"@prisma/client": "^4.1.0",
+		"@types/bcrypt": "^5.0.0",
 		"apollo-server": "^3.10.0",
+		"bcrypt": "^5.0.1",
 		"graphql": "^16.5.0",
 		"nodemon": "^2.0.19",
 		"prisma": "^4.1.0",
