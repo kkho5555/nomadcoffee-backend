@@ -5,7 +5,6 @@
 
 */
 -- DropTable
-DROP TABLE "tmpModel";
 
 -- CreateTable
 CREATE TABLE "User" (
