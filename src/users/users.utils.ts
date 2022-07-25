@@ -15,6 +15,17 @@ export const getUser = async (authorization: string) => {
 		) {
 			const user = await client.user.findUnique({
 				where: { id: verifiedToken["id"] },
+				select: {
+					id: true,
+					username: true,
+					email: true,
+					name: true,
+					location: true,
+					avatarURL: true,
+					githubUsername: true,
+					createdAt: true,
+					updatedAt: true,
+				},
 			});
 			return user;
 		} else {

@@ -1,3 +1,4 @@
+require("dotenv").config();
 import { Resolvers } from "@/types.d";
 import * as bcrypt from "bcrypt";
 import * as jwt from "jsonwebtoken";
