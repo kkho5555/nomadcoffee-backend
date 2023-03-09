@@ -1,4 +1,3 @@
-import client from "../../client";
 import * as bcrypt from "bcrypt";
 import { Resolvers } from "../../types";
 
@@ -14,7 +13,8 @@ const resolvers: Resolvers = {
                 location = "",
                 avatarURL = "",
                 githubUsername = "",
-            }
+            },
+            { client }
         ) => {
             try {
                 const existingUser = await client.user.findFirst({
